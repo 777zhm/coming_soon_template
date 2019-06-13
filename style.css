@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Slabo+27px&display=swap');
 
 body{
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	font-weight: normal;
 }
@@ -10,8 +10,9 @@ h1, h2, h3, h4, h5, h6{
 	font-family: 'Slabo 27px', serif;
 }
 
-h1{
+h1, h2{
 	color: #ffffff;
+	text-transform: uppercase;
 }
 
 
@@ -31,13 +32,23 @@ a:hover{
 }
 
 .heroscreen_section{
-
-
+	background-color: #1C5340;
+	color: #ffffff;
+	height: 100vh;
 }
 
 .colored_block{
 	background-color: #1C5340;
 	color: #ffffff;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	height: 100vh;
 }
 
 .photo_block{
@@ -47,6 +58,31 @@ a:hover{
 	background-size: cover;
 	background-repeat: no-repeat;
 
-	height: 870px;
-	width: 100%;
+	height: 100vh;
+}
+
+.section_heading{
+	margin-top: 60px;
+	text-transform: none;
+	text-align: center;
+}
+
+.moto{
+	text-align: center;
+}
+
+.moto h2{
+	font-size: 52px;
+}
+
+.logotype{
+	margin-bottom: 60px;
+}
+
+.logo_img{
+	margin-right: 20px;
+}
+
+.logo_text h1{
+	font-size: 34px;
 }
