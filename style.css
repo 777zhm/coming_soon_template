@@ -1,13 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+
+@font-face {
+    font-family: 'FiveYears';
+    src: url('fonts/FiveYearsLaterRegular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Slabo 27px', serif;
 	font-size: 16px;
 	font-weight: normal;
 }
 
 h1, h2, h3, h4, h5, h6{
-	font-family: 'Slabo 27px', serif;
+	font-family: 'FiveYears', serif;
 }
 
 h1, h2{
@@ -34,7 +42,7 @@ a:hover{
 .heroscreen_section{
 	background-color: #1C5340;
 	color: #ffffff;
-	height: 100vh;
+	
 }
 
 .colored_block{
@@ -64,14 +72,14 @@ a:hover{
 .message_block{
 	margin-top: 130px;
 	text-align: center;
-	
 }
 
 .section_heading{
+	font-family: 'Slabo 27px', serif;
 	font-size: 42px;
 	text-transform: none;
 	text-align: center;
-	font-style: italic;
+	
 }
 
 .moto{
@@ -98,3 +106,56 @@ a:hover{
 .logo_text h1{
 	font-size: 34px;
 }
+
+/*** Start Media query ***/
+/* Start min-width: 992px and max-width: 1199px */
+@media (min-width: 992px) and (max-width: 1199px)  {
+
+
+}/* End min-width: 992px and max-width: 1199px */
+/* Start max-width: 991px*/
+@media (max-width: 991px)  {
+.photo_block{
+	background-image: url(img/barista_bg_md.png);
+	min-height: 500px;
+}
+
+
+} /* End max-width: 991px*/
+/* Start max-width: 767px */
+@media (max-width: 767px)  {
+
+.colored_block{
+	height: 60vh;
+}
+
+} /* End max-width: 767px*/
+/* Start max-width: 575px */
+@media (max-width: 575px)  {
+
+.photo_block{
+	background-image: url(img/barista_bg_mob.png);
+
+	min-height: 400px;
+}
+
+
+.message_block{
+	margin-top: 20px;
+}
+
+.section_heading{
+	font-size: 36px;
+}
+
+.moto h2{
+	font-size: 36px;
+}
+
+
+.logotype{
+	margin-bottom: 20px;
+}
+
+} /* End max-width: 575px */
+/*** End Media query ***/
