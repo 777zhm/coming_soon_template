@@ -90,15 +90,15 @@ a:hover{
 	font-size: 52px;
 }
 
-.logotype{
+.logo_row{
 	margin-bottom: 60px;
 }
 
-.logo_img{
+.logo_box{
 	margin-right: 20px;
 }
 
-.logo_img img{
+.logo_box img{
 	max-height: 52px;
 }
 
@@ -107,12 +107,11 @@ a:hover{
 	font-size: 34px;
 }
 
+.sm_screen{
+	display: none;
+}
+
 /*** Start Media query ***/
-/* Start min-width: 992px and max-width: 1199px */
-@media (min-width: 992px) and (max-width: 1199px)  {
-
-
-}/* End min-width: 992px and max-width: 1199px */
 /* Start max-width: 991px*/
 @media (max-width: 991px)  {
 .photo_block{
@@ -124,21 +123,30 @@ a:hover{
 } /* End max-width: 991px*/
 /* Start max-width: 767px */
 @media (max-width: 767px)  {
-
-.colored_block{
-	height: 60vh;
+.lg_screen{
+	display: none;
 }
 
-} /* End max-width: 767px*/
-/* Start max-width: 575px */
-@media (max-width: 575px)  {
+.sm_screen{
+	display: block;
+}
 
 .photo_block{
 	background-image: url(img/barista_bg_mob.png);
-
 	min-height: 400px;
 }
 
+.colored_block{
+	height: 50vh;
+}
+
+.logo_box{
+	margin-right: 0;
+}
+
+.logo_box img{
+	max-height: 100px;
+}
 
 .message_block{
 	margin-top: 20px;
@@ -148,12 +156,7 @@ a:hover{
 	font-size: 36px;
 }
 
-.moto h2{
-	font-size: 36px;
-}
-
-
-.logotype{
+.logo_row{
 	margin-bottom: 20px;
 }
 
