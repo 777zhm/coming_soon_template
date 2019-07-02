@@ -36,10 +36,11 @@ a:hover{
 }
 
 .colored_block{
+	position: relative;
 	background-color: #1C5340;
 	color: #ffffff;
 	min-height: 100vh;
-	position: relative;
+	overflow-y: hidden; 
 }
 
 .section_heading{
