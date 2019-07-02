@@ -1,28 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
-
 @font-face {
-    font-family: 'FiveYears';
-    src: url('fonts/FiveYearsLaterRegular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'FiveYears';
+	src: url('fonts/FiveYearsLaterRegular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
 }
 
-
 body{
-    font-family: 'Slabo 27px', serif;
+	font-family: 'FiveYears', serif;
 	font-size: 16px;
 	font-weight: normal;
 }
-
-h1, h2, h3, h4, h5, h6{
-	font-family: 'FiveYears', serif;
-}
-
-h1, h2{
-	color: #ffffff;
-	text-transform: uppercase;
-}
-
 
 a{
 	color: inherit;
@@ -34,29 +21,9 @@ a:hover{
 	text-decoration: underline;
 }
 
-.company_colors{
-	background-color: #1C5340;
-	background-color: #ffffff;
-}
-
 .heroscreen_section{
 	background-color: #1C5340;
 	color: #ffffff;
-	
-}
-
-.colored_block{
-	background-color: #1C5340;
-	color: #ffffff;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
-	height: 100vh;
 }
 
 .photo_block{
@@ -65,50 +32,37 @@ a:hover{
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
-
 	min-height: 500px;
 }
 
-.message_block{
-	margin-top: 130px;
-	text-align: center;
+.colored_block{
+	background-color: #1C5340;
+	color: #ffffff;
+	min-height: 100vh;
+	position: relative;
 }
 
 .section_heading{
-	/*font-family: 'Slabo 27px', serif;*/
+	padding-top: 60px;
+	font-family: 'FiveYears', serif;
 	font-size: 42px;
+	color: #ffffff;
 	text-transform: none;
-	text-align: center;
-	
 }
 
-.moto{
-	text-align: center;
+.logo_block{
+	position:relative;
+    height: 70vh;
 }
 
-.moto h2{
-	font-size: 52px;
-}
-
-.logo_row{
-	margin-bottom: 60px;
-}
-
-.logo_box{
-	margin-right: 20px;
-}
-
-.logo_box img{
-	max-height: 52px;
-}
-
-
-.logo_text h1{
-	font-size: 34px;
-}
-
-.sm_screen{
-	display: none;
+.logo_block img{
+	max-height: 240px;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 /*** Start Media query ***/
@@ -119,45 +73,29 @@ a:hover{
 	min-height: 500px;
 }
 
-
 } /* End max-width: 991px*/
 /* Start max-width: 767px */
 @media (max-width: 767px)  {
-.lg_screen{
-	display: none;
-}
-
-.sm_screen{
-	display: block;
-}
-
 .photo_block{
 	background-image: url(img/barista_bg_mob.png);
 	min-height: 400px;
 }
 
 .colored_block{
-	height: 50vh;
-}
-
-.logo_box{
-	margin-right: 0;
-}
-
-.logo_box img{
-	max-height: 100px;
-}
-
-.message_block{
-	margin-top: 20px;
+	min-height: 60vh;
 }
 
 .section_heading{
+	padding-top: 30px;
 	font-size: 36px;
 }
 
-.logo_row{
-	margin-bottom: 20px;
+.logo_block{
+    height: 50vh;
+}
+
+.logo_block img{
+	max-height: 150px;
 }
 
 } /* End max-width: 575px */
